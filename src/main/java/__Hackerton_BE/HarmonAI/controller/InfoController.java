@@ -4,6 +4,7 @@ import __Hackerton_BE.HarmonAI.dto.InfoRequestDTO;
 import __Hackerton_BE.HarmonAI.dto.InfoResponseDTO;
 import __Hackerton_BE.HarmonAI.service.InfoService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,6 +21,6 @@ public class InfoController {
     @PostMapping("/current")
     public ResponseEntity<InfoResponseDTO> processInfoQuestion(@RequestBody InfoRequestDTO requestDto) {
         InfoResponseDTO response = infoService.processQuestion(requestDto);
-        return ResponseEntity.ok(response);
+        return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 }
