@@ -21,6 +21,7 @@ public class InfoController {
     @PostMapping("/current")
     public ResponseEntity<InfoResponseDTO> processInfoQuestion(@RequestBody InfoRequestDTO requestDto) {
         InfoResponseDTO response = infoService.processQuestion(requestDto);
+        System.out.println("response = " + requestDto);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 }

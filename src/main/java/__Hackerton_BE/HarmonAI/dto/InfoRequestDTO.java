@@ -9,5 +9,6 @@ import lombok.*;
 public class InfoRequestDTO {
     private double latitude;
     private double longitude;
+    private int pop;
     private String question;
 }

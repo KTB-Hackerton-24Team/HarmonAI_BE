@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MusicVideo {
-    private String videoId;
+    private String artist;
     private String title;
     private String embedUrl;
 }

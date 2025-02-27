@@ -1,6 +1,9 @@
 package __Hackerton_BE.HarmonAI.dto;
 
+import __Hackerton_BE.HarmonAI.domain.MusicVideo;
 import lombok.*;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -8,7 +11,16 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class InfoResponseDTO {
-    private double latitude;
-    private double longitude;
-    private String question;
+    private List<MusicResponseItem> recommendations;
+
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Builder
+    public static class MusicResponseItem {
+        private String title;
+        private String artist;
+        private String embedUrl;
+    }
 }
