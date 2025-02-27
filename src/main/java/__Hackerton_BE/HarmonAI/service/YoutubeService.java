@@ -89,19 +89,20 @@ public class YoutubeService {
             if (searchResults != null && !searchResults.isEmpty()) {
                 SearchResult video = searchResults.get(0);
                 String videoId = video.getId().getVideoId();
-                String videoTitle = video.getSnippet().getTitle();
+//                String videoTitle = video.getSnippet().getTitle();
                 String embedUrl = "https://www.youtube.com/embed/" + videoId;
 
                 MusicVideo musicVideo = MusicVideo.builder()
                         .artist(artist)
-                        .title(videoTitle)
+                        .title(title)
                         .embedUrl(embedUrl)
                         .build();
 
                 // 콘솔에 출력
                 System.out.println("Video ID: " + videoId);
-                System.out.println("Title: " + videoTitle);
+                System.out.println("Title: " + title);
                 System.out.println("Embed URL: " + embedUrl);
+
 
                 log.info("Found Youtube video: {}", musicVideo);
                 return Optional.of(musicVideo);
