@@ -1,8 +1,8 @@
-package __Hackerton_BE.HarmonAI.controller;
+package Hackerton.BE.HarmonAI.controller;
 
-import __Hackerton_BE.HarmonAI.dto.InfoRequestDTO;
-import __Hackerton_BE.HarmonAI.dto.InfoResponseDTO;
-import __Hackerton_BE.HarmonAI.service.InfoService;
+import Hackerton.BE.HarmonAI.dto.InfoRequestDTO;
+import Hackerton.BE.HarmonAI.dto.InfoResponseDTO;
+import Hackerton.BE.HarmonAI.service.InfoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

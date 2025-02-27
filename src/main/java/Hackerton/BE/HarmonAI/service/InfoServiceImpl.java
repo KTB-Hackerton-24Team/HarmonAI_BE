@@ -1,11 +1,11 @@
-package __Hackerton_BE.HarmonAI.service;
+package Hackerton.BE.HarmonAI.service;
 
-import __Hackerton_BE.HarmonAI.domain.MusicVideo;
-import __Hackerton_BE.HarmonAI.dto.InfoRequestDTO;
-import __Hackerton_BE.HarmonAI.dto.InfoResponseDTO;
-import __Hackerton_BE.HarmonAI.dto.InfoResponseDTO.MusicResponseItem;
-import __Hackerton_BE.HarmonAI.dto.MusicRecommendationDTO;
-import __Hackerton_BE.HarmonAI.dto.MusicRecommendationsDTO;
+import Hackerton.BE.HarmonAI.domain.MusicVideo;
+import Hackerton.BE.HarmonAI.dto.InfoRequestDTO;
+import Hackerton.BE.HarmonAI.dto.InfoResponseDTO;
+import Hackerton.BE.HarmonAI.dto.InfoResponseDTO.MusicResponseItem;
+import Hackerton.BE.HarmonAI.dto.MusicRecommendationDTO;
+import Hackerton.BE.HarmonAI.dto.MusicRecommendationsDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,7 +18,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -120,6 +119,7 @@ public class InfoServiceImpl implements InfoService {
             HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
 
             log.info("AI 서비스 호출: {}", aiServerUrl);
+
 
             // AI로 POST 요청 전송
             ResponseEntity<MusicRecommendationsDTO> response = restTemplate.exchange(

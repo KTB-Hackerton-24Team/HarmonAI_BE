@@ -1,11 +1,11 @@
-package __Hackerton_BE.HarmonAI.controller;
+package Hackerton.BE.HarmonAI.controller;
 
-import __Hackerton_BE.HarmonAI.domain.MusicVideo;
-import __Hackerton_BE.HarmonAI.dto.ErrorResponseDTO;
-import __Hackerton_BE.HarmonAI.dto.MusicRecommendationDTO;
-import __Hackerton_BE.HarmonAI.dto.MusicRecommendationsDTO;
-import __Hackerton_BE.HarmonAI.dto.YoutubeSearchResultDTO;
-import __Hackerton_BE.HarmonAI.service.YoutubeService;
+import Hackerton.BE.HarmonAI.domain.MusicVideo;
+import Hackerton.BE.HarmonAI.dto.ErrorResponseDTO;
+import Hackerton.BE.HarmonAI.dto.MusicRecommendationDTO;
+import Hackerton.BE.HarmonAI.dto.MusicRecommendationsDTO;
+import Hackerton.BE.HarmonAI.dto.YoutubeSearchResultDTO;
+import Hackerton.BE.HarmonAI.service.YoutubeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

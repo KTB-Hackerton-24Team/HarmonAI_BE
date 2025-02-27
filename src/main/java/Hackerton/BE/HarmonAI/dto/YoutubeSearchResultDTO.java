@@ -1,6 +1,6 @@
-package __Hackerton_BE.HarmonAI.dto;
+package Hackerton.BE.HarmonAI.dto;
 
-import __Hackerton_BE.HarmonAI.domain.MusicVideo;
+import Hackerton.BE.HarmonAI.domain.MusicVideo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

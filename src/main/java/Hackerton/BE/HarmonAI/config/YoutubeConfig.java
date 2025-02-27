@@ -1,4 +1,4 @@
-package __Hackerton_BE.HarmonAI.config;
+package Hackerton.BE.HarmonAI.config;
 
 
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;

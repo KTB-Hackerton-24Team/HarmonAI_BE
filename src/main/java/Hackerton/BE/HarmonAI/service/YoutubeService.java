@@ -1,19 +1,14 @@
-package __Hackerton_BE.HarmonAI.service;
+package Hackerton.BE.HarmonAI.service;
 
-import __Hackerton_BE.HarmonAI.domain.MusicVideo;
-import __Hackerton_BE.HarmonAI.dto.MusicRecommendationDTO;
+import Hackerton.BE.HarmonAI.domain.MusicVideo;
+import Hackerton.BE.HarmonAI.dto.MusicRecommendationDTO;
 import com.google.api.services.youtube.YouTube;
 import com.google.api.services.youtube.model.SearchListResponse;
 import com.google.api.services.youtube.model.SearchResult;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
 

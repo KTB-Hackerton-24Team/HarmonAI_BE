@@ -1,4 +1,4 @@
-package __Hackerton_BE.HarmonAI.domain;
+package Hackerton.BE.HarmonAI.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

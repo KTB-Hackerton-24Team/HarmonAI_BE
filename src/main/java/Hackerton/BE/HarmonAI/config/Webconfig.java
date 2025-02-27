@@ -1,4 +1,4 @@
-package __Hackerton_BE.HarmonAI.config;
+package Hackerton.BE.HarmonAI.config;
 
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

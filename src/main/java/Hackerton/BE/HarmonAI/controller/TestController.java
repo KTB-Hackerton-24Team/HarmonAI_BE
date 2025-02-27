@@ -1,4 +1,4 @@
-package __Hackerton_BE.HarmonAI.controller;
+package Hackerton.BE.HarmonAI.controller;
 
 
 import org.springframework.http.HttpStatus;

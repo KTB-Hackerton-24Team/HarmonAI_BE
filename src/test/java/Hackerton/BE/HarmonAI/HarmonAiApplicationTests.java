@@ -1,4 +1,4 @@
-package __Hackerton_BE.HarmonAI;
+package Hackerton.BE.HarmonAI;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

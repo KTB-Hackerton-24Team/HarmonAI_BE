@@ -1,10 +1,9 @@
-package __Hackerton_BE.HarmonAI.controller;
+package Hackerton.BE.HarmonAI.controller;
 
-import __Hackerton_BE.HarmonAI.dto.ErrorResponseDTO;
+import Hackerton.BE.HarmonAI.dto.ErrorResponseDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 

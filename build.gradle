@@ -1,7 +1,11 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.4.3'
-	id 'io.spring.dependency-management' version '1.1.7'
+	id 'org.springframework.boot' version '3.2.2'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+springBoot {
+	mainClass = 'Hackerton.BE.HarmonAI.HarmonAiApplication'  // 패키지명에 '-'가 있다면 실제 경로 확인 필요
 }
 
 group = '24-Hackerton-BE'

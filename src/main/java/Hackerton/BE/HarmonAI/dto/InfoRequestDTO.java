@@ -1,4 +1,4 @@
-package __Hackerton_BE.HarmonAI.dto;
+package Hackerton.BE.HarmonAI.dto;
 
 import lombok.*;
 
