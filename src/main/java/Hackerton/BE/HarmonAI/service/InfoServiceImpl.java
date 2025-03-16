@@ -153,8 +153,9 @@ public class InfoServiceImpl implements InfoService {
         // 질문에 따라 다른 추천 결과 생성
         if (question.contains("신나는") || question.contains("행복")) {
             recommendations.add(createRecommendation("Dynamite", "BTS"));
-            recommendations.add(createRecommendation("Butter", "BTS"));
             recommendations.add(createRecommendation("Uptown Funk", "Mark Ronson"));
+            recommendations.add(createRecommendation("Blinding Lights", "The Weeknd"));
+            recommendations.add(createRecommendation("Levitating", "Dua Lipa"));
         } else if (question.contains("슬픈") || question.contains("우울")) {
             recommendations.add(createRecommendation("Someone Like You", "Adele"));
             recommendations.add(createRecommendation("Fix You", "Coldplay"));
@@ -165,8 +166,11 @@ public class InfoServiceImpl implements InfoService {
             recommendations.add(createRecommendation("Stay", "The Kid LAROI"));
         } else {
             // 기본 추천
-            recommendations.add(createRecommendation("Dynamite", "BTS"));
             recommendations.add(createRecommendation("Blinding Lights", "The Weeknd"));
+            recommendations.add(createRecommendation("Levitating", "Dua Lipa"));
+            recommendations.add(createRecommendation("Dynamite", "BTS"));
+            recommendations.add(createRecommendation("Uptown Funk", "Mark Ronson"));
+            recommendations.add(createRecommendation("Stay", "The Kid LAROI"));
         }
 
         return recommendations;

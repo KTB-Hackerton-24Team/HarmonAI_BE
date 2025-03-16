@@ -14,3 +14,4 @@ import java.util.List;
 public class MusicRecommendationsDTO {
     private List<MusicRecommendationDTO> recommendations;
 }
+
